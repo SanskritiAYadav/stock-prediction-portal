@@ -5,8 +5,7 @@ import Footer from './Footer'
 
 const Main = () => {
   return (
-    <>
-    <Header />
+    <>  
     <div className='container'>
         <div className='p-5 text-center bg-light-dark rounded-3'>
              <h1 className='text-light'>Welcome to the Stock Prediction Portal </h1>
@@ -14,9 +13,6 @@ const Main = () => {
                 <Button text="Get Started" class="btn-info"/>
         </div>
     </div>
-
-    <Footer />
-    
     </>
   )
 }
