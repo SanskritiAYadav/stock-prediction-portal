@@ -1,0 +1,22 @@
+body{
+    background-color: #212529;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.bg-light-dark{
+    background-color: #343a40;
+    color: #fff;
+}
+
+#root{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    flex: 1;
+    padding: 20px;
+}
