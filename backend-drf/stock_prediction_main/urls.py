@@ -15,8 +15,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path , include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    # Base API Endpoint
+    path('api/v1/', include('api.urls')), # Include the URLs from the api app, which will handle all API-related endpoints. By including 'api.urls', we can keep our URL configurations organized and modular, allowing us to manage API endpoints separately from other parts of the application.
 ]
