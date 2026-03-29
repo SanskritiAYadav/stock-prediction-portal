@@ -10,4 +10,5 @@ urlpatterns = [
     path('register/', UserViews.RegisterView.as_view()), # This endpoint will handle user registration. When a POST request is made to /api/v1/register/, it will invoke the RegisterView, which will create a new user based on the provided data.
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('protected-view/', UserViews.ProtectedView.as_view(), name='protected_view'),
 ]
